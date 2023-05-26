@@ -3,6 +3,7 @@
     "name": "favstack",
     "slug": "favstack",
     "version": "1.0.0",
+    "scheme": "favstack",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",

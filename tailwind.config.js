@@ -2,7 +2,13 @@
 module.exports = {
   content: ['./App.tsx', './<custom directory>/**/*.tsx'],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        title: 'Rubik_700Bold',
+        body: 'Rubik_400Regular',
+      },
+    },
   },
+  darkMode: 'class',
   plugins: [],
 }

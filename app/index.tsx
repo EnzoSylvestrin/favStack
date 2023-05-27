@@ -1,9 +1,12 @@
 import { Text, View } from 'react-native';
+import { Header } from '../src/components/Header';
+import FloatingButton from '../src/components/FloatingButton';
 
 const Home = () => {
     return (
-        <View className="flex-1 items-center justify-center">
-            <Text className="font-body text-4xl text-gray-50">Hi Mom</Text>
+        <View className='flex-1'>
+            <Header />
+            <FloatingButton />
         </View>
     );
 }

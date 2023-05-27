@@ -1,12 +1,19 @@
-import { Text, View } from 'react-native';
+import { View } from 'react-native';
+
 import { Header } from '../src/components/Header';
+
 import FloatingButton from '../src/components/FloatingButton';
+import Text from '../src/components/Text';
 
 const Home = () => {
+
+    const HandlePress = () => {
+    }
+
     return (
         <View className='flex-1'>
             <Header />
-            <FloatingButton />
+            <FloatingButton PressFunction={HandlePress} />
         </View>
     );
 }

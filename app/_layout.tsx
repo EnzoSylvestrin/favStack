@@ -29,7 +29,7 @@ const RootLayout = () => {
 
     return (
         <View
-            className='flex-1 bg-zinc-100 dark:bg-zinc-900'
+            className='flex-1 bg-whiteBg dark:bg-darkBg'
             style={{ paddingBottom: bottom, paddingTop: top }}
         >
             <StatusBar style={colorScheme === 'dark' ? "light" : 'dark'} backgroundColor={colorScheme === 'dark' ? 'rgb(39 39 42)' : 'rgb(228 228 231)'} />

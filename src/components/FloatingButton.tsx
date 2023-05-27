@@ -1,13 +1,18 @@
-import { Plus } from "phosphor-react-native";
-import { Pressable, View } from "react-native";
+import { Pressable } from "react-native";
+
+import { styled } from "nativewind";
+
+import { Feather } from '@expo/vector-icons'
+
+const StyledFeather = styled(Feather);
 
 const FloatingButton = ({ PressFunction }: { PressFunction: () => void }) => {
     return (
         <Pressable
             onPress={PressFunction}
-            className="absolute items-center justify-center bottom-2 right-2 rounded-full bg-purple-700 p-3"
+            className="absolute items-center justify-center bottom-2 right-2 rounded-full bg-main shadow-lg p-3"
         >
-            <Plus size={26} color="#fff" />
+            <StyledFeather name="plus" size={26} className="text-darkText" />
         </Pressable>
     );
 }

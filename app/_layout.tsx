@@ -41,6 +41,7 @@ const RootLayout = () => {
                 }}
             >
                 <Stack.Screen name="index" />
+                <Stack.Screen name="blackboard" />
             </Stack>
         </View>
     )

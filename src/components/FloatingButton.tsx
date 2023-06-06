@@ -1,18 +1,19 @@
 import { Pressable } from "react-native";
 
-import { styled } from "nativewind";
+import StyledFeather from "./Feather";
 
-import { Feather } from '@expo/vector-icons'
+type FloatingButtonProps = {
+    PressFunction: () => void,
+    Icon: any,
+}
 
-const StyledFeather = styled(Feather);
-
-const FloatingButton = ({ PressFunction }: { PressFunction: () => void }) => {
+const FloatingButton = ({ PressFunction, Icon }: FloatingButtonProps) => {
     return (
         <Pressable
             onPress={PressFunction}
             className="absolute items-center justify-center bottom-2 right-2 rounded-full bg-main shadow-lg p-3"
         >
-            <StyledFeather name="plus" size={26} className="text-darkText" />
+            <StyledFeather name={Icon} size={26} className="text-darkText" />
         </Pressable>
     );
 }

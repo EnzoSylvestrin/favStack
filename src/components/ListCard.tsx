@@ -2,8 +2,8 @@ import { useState } from 'react';
 
 import { View, TouchableOpacity } from 'react-native';
 
+import { StyledFeather } from './Icons';
 import Text from './Text';
-import StyledFeather from './Feather';
 
 type ListCardProps = {
     title: string,

@@ -1,6 +1,6 @@
 import { Pressable } from "react-native";
 
-import StyledFeather from "./Feather";
+import { StyledFeather } from "./Icons";
 
 type FloatingButtonProps = {
     PressFunction: () => void,
